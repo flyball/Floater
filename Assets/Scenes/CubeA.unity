@@ -2019,7 +2019,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2dc2fd609495a044cabb54f043a98e0b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6dc8c6df3611b89488aedc35ccce5b00, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

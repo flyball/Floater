@@ -8,7 +8,7 @@ public class GridCubeTrigger : MonoBehaviour {
     {
         Renderer rend =  gameObject.GetComponent<Renderer>();
         rend.materials[0].color = new Color(Random.Range(0.0f, 1.01f), Random.Range(0.0f, 1.01f),
-            Random.Range(0.0f, 1.01f), 1.0f);       
+            Random.Range(0.0f, 1.01f), 1.0f);
         
     } 
 }

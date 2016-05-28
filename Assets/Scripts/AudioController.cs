@@ -27,7 +27,7 @@ public class AudioController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        int i = 64;
+        int i = 1;
         int blockIndex = 19;
         if(state == States.Playing)
         {           
@@ -41,10 +41,11 @@ public class AudioController : MonoBehaviour {
                     if(blockIndex%18 !=0 && (blockIndex + 1)%18 != 0)
                     {
                         Transform block = grid.transform.GetChild((blockIndex));
-                        float scale = Mathf.Abs(Mathf.Log((spectrumL[i-1] + spectrumR[i-1])/2,2.0f));
+                        float scale = ((spectrumR[i] + spectrumL[i])/2.0f) * 1500.0f;
                         if (scale != Mathf.Infinity)
                         {
-                            block.localScale = new Vector3(1.0f, 1.0f, scale);
+                            block.localScale = new Vector3(1.0f,1.0f,Mathf.Lerp(.5f + scale, 1.0f + block.localScale.z / 2, Time.deltaTime * 20));
+                            block.position = new Vector3(block.position.x, block.position.y, -block.localScale.z / 2);                            
                         }
                         i++;
                     }
