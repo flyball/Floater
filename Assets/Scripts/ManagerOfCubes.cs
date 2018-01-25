@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ManagerOfCubes : MonoBehaviour {    
+using Floater;
+
+public class ManagerOfCubes : MonoBehaviour {
     private IGrid draw;
     private IMenu menu;    
     

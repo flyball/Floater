@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using Floater;
+
 public class GridDraw : MonoBehaviour, ManagerOfCubes.IGrid {
 
     private GameObject gridParent;
@@ -7,17 +9,17 @@ public class GridDraw : MonoBehaviour, ManagerOfCubes.IGrid {
     private int xDim;
     private int yDim;
     private bool hasParent = false; 
+    public Boardstate boardstate;
     
     void Start()
     {
-        gridInputs = GameObject.Find("GridInputs").GetComponent<GridInputs>();
         
     }
 
     public void drawGrid()
     {
-        xDim = int.Parse(gridInputs.x);
-        yDim = int.Parse(gridInputs.y);
+        xDim = boardstate.Width;
+        yDim = boardstate.Height;
 
         if(gridParent != null)
         {
