@@ -10,6 +10,7 @@ namespace Floater
 		public string BoardName = "";
 		public int Width = 16;
 		public int Height = 16;
+		public Color BoardColor = Color.blue;
 
 
 

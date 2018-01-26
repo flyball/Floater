@@ -45,18 +45,21 @@ public class GridDraw : MonoBehaviour, ManagerOfCubes.IGrid {
                     GameObject tmp = Instantiate(Resources.Load("Prefabs/BorderCube"),
                         new Vector3(width, height, 0), Quaternion.identity) as GameObject;
                     tmp.transform.SetParent(gridParent.transform);
+                    tmp.GetComponent<Renderer>().material.color = boardstate.BoardColor;
                 }
                 else if (height == 0 || height == xDim + 1)
                 {
                     GameObject tmp = Instantiate(Resources.Load("Prefabs/BorderCube"),
                         new Vector3(width, height, 0), Quaternion.identity) as GameObject;
                     tmp.transform.SetParent(gridParent.transform);
+                    tmp.GetComponent<Renderer>().material.color = boardstate.BoardColor;
                 }
                 else
                 {
                     GameObject tmp = Instantiate(Resources.Load("Prefabs/GridCube"),
                         new Vector3(width, height, 0), Quaternion.identity) as GameObject;
                     tmp.transform.SetParent(gridParent.transform);
+                    // tmp.GetComponent<Renderer>().material.color = boardstate.BoardColor;
                 }
             }
         }

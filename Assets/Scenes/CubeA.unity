@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 198480667}
   - component: {fileID: 198480668}
   m_Layer: 0
-  m_Name: _AudioController
+  m_Name: AudioController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2078,7 +2078,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6dc8c6df3611b89488aedc35ccce5b00, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bd893199f7c45404699d0ef2751ab629, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2136,7 +2136,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

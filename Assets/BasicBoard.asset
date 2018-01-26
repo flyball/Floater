@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Name: BasicBoard
   m_EditorClassIdentifier: 
   BoardName: BasicBoard
-  Width: 16
-  Height: 16
+  Width: 26
+  Height: 26
+  BoardColor: {r: 0, g: 0, b: 1, a: 1}
